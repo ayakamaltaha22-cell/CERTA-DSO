@@ -1,0 +1,20 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "certa-dso"
+version = "0.1.0"
+description = "Reference implementation of CERTA-DSO"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.2",
+  "cryptography>=42.0.0",
+  "numpy>=1.24",
+]
+
+[tool.setuptools.packages.find]
+where = ["certa_dso"]
+include = ["certa_dso*"]
