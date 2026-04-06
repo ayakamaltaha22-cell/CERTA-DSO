@@ -1,6 +1,0 @@
-torch
-transformers
-datasets
-accelerate
-# optional for signing/verifying SSC:
-cryptography
