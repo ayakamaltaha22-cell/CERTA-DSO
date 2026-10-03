@@ -1,0 +1,17 @@
+{
+  "hash_algorithm": "SHA-256",
+  "signature_algorithm": "Ed25519",
+  "replay_policy": {
+    "mode": "exact"
+  },
+  "randomness": {
+    "seed": 42,
+    "deterministic_algorithms": true
+  },
+  "isolation_backend": {
+    "name": "LoRA",
+    "target_modules": ["q_proj", "v_proj"],
+    "rank": 8,
+    "alpha": 16
+  }
+}
